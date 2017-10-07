@@ -1,0 +1,111 @@
+.cv-block{
+    padding:15px 30px 15px 30px;
+}
+
+ul{
+    list-style: none;
+}
+[contentEditable=true]{
+    min-width: 1em;
+    display: inline-block;
+    position: relative;
+}
+
+[cvo-form-field]:hover{
+    outline: 1pt dashed #333132;
+}
+
+.default_min_width{
+    min-width: 25pt;
+}
+.cv-block-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #4f4f4f;
+    width: 100%;
+}
+
+.cv-block-title span{
+    font-weight: bold;
+    width: 100%;
+}
+.cvo-description-objective{
+    width: 100%;
+}
+
+.col-left{
+    width: 35%;
+    float: left;
+}
+    .cv-education-school, .cv-activity-organization{
+        text-transform: uppercase;
+        width: 100%;
+        font-weight: bold;
+    }
+    .cv-education-time, .cv-activity-time{
+        margin-top: 5px;
+        color: #4f4f4f;
+        text-transform: uppercase;
+    }
+
+
+.col-right{
+    padding-left: 20px;
+    width: 65%;
+    float: left;
+}
+    .cv-education-title, .cv-activity-position{
+        text-transform: uppercase;
+        width: 100%;
+        font-weight: bold;
+    }
+    .cv-education-details, .cv-activity-details{
+        margin-top: 5px;
+        color: #4f4f4f;
+    }
+#cv-additional-information-details{
+    width: 100%;
+}
+#group-content-bottom{
+    padding:0;
+}
+#group-content-bottom .cv-block:first-child{
+    width: 35%;
+    float: left;
+}
+#group-content-bottom .cv-block:nth-child(2){
+    width: 60%;
+    padding-left: 20px;
+    float: left;
+}
+#group-content-bottom #interest-table{
+    padding-left: 20px;
+}
+    #interest-table .row{
+        margin-bottom: 15px;
+        color: #000;
+    }
+    #interest-table li{
+        width: 100%;
+        list-style-type: circle;
+    }
+
+.cv-skill-rate-bar[bval="3"] .cv-skill-rate-value{
+    width: 60%;
+}
+
+.cv-skill-rate-bar{
+    margin-top: 3px;
+    background-color: #ccc;
+    display: block;
+    width: 100%;
+    height: 8px;
+    text-align: center;
+}
+
+.cv-skill-rate-value{
+    background-color: #3ba469;
+    display: block;
+    height: 8px;
+}

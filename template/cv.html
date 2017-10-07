@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cập nhật CV trong YBOX.vn</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Mitr|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <link rel="stylesheet" href="../static/css/cv/main.css">
+    <link rel="stylesheet" href="../static/css/cv/cv-content.css">
+    <link rel="stylesheet" href="../static/css/cv/cv-sidebar.css">
+</head>
+<body>
+<header >
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../static/img/logo.png" alt="yBoxCV, Inc"
+                         title="Kênh thông tin chất lượng cao của sinh viên & giới trẻ Việt Nam" class="logo-cv">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right nav-header">
+                    <li>
+                        <a href="#">
+                            Trang quản lí
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="dropdown">
+                            Quản lí CV <span class="label label-info label-number">1</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Hồ sơ cá nhân <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mã ứng viên : <span class="id-user">#267333</span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Quản lí CV</a></li>
+                            <li><a href="#">Nâng cấp tài khoản</a></li>
+                            <li><a href="#">Thay đổi mật khẩu</a></li>
+                            <li><a href="#">Trợ giúp</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Thoát tài khoản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!--cv - toolbar-->
+    <div id="cv-toolbar">
+        <div class="toolbar-controls">
+            <div class="container">
+                <div class="item" id="toolbar-color">
+                    <div class="title">Tông màu</div>
+                    <div class="options">
+                        <span class="color" style="background-color:#556e8e" data-color="556e8e">
+                            <i class="fa fa-check"></i>
+                        </span>
+                        <span class="color active" style="background-color:#3ba469" data-color="3ba469">
+                            <i class="fa fa-check"></i>
+                        </span>
+                        <span class="color" style="background-color:#202122" data-color="202122">
+                            <i class="fa fa-check"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item" id="toolbar-font">
+                    <div class="title">Font chữ</div>
+                    <div class="options">
+                        <select name="font" id="font-selector" style="width: 120px;"
+                                tabindex="-1" class="select2-hidden-accessible" aria-hidden="true">
+                            <option value="Helvetica Neue, sans-serif" selected>Helvetica Neue</option>
+                            <option value="Roboto, sans-serif">Roboto</option>
+                            <option value="Roboto Condensed, sans-serif">Roboto Condensed</option>
+                            <option value="Open Sans, sans-serif">Open Sans</option>
+                            <option value="Mitr, sans-serif">Mitr</option>
+                        </select>
+                        <!--<span class="select2 select2-container select2-container&#45;&#45;default select2-container&#45;&#45;below select2-container&#45;&#45;open select2-container&#45;&#45;focus" dir="ltr" style="width: 120px;">
+                            <span class="selection">
+                                <span class="select2-selection select2-selection&#45;&#45;single" role="combobox"
+                                      aria-haspopup="true" aria-expanded="true" tabindex="0"
+                                      aria-labelledby="select2-font-selector-container"
+                                      aria-owns="select2-font-selector-results"
+                                      aria-activedescendant="select2-font-selector-result-jwtk-mitr">
+                                    <span class="select2-selection__rendered" id="select2-font-selector-container"
+                                          title="Roboto">
+                                        Roboto
+                                    </span>
+                                    <span class="select2-selection__arrow" role="presentation">
+                                        <b role="presentation"></b>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="dropdown-wrapper" aria-hidden="true"></span>
+                        </span>-->
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">Cỡ chữ</div>
+                    <div class="options">
+                        <span class="fontsize" data-size="small">
+                            <i class="fa fa-font"></i>
+                        </span>
+                        <span class="fontsize active" data-size="normal">
+                            <i class="fa fa-font"></i>
+                        </span>
+                        <span class="fontsize" data-size="large">
+                            <i class="fa fa-font"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">Cách dòng</div>
+                    <div class="options">
+                        <span class="line-height" data-spacing="small">
+                            <i class="fa fa-arrows-v"></i>
+                        </span>
+                        <span class="line-height active" data-spacing="normal">
+                            <i class="fa fa-arrows-v"></i>
+                        </span>
+                        <span class="line-height" data-spacing="large">
+                            <i class="fa fa-arrows-v"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="item button" id="btn-edit-layout">
+                    <div class="title">Thêm mục</div>
+                    <i class="fa fa-plus-circle"></i>
+                </div>
+                <div class="item button" id="btn-change-template">
+                    <div class="title">Đổi mẫu CV</div>
+                    <i class="fa fa-file-o"></i>
+                </div>
+                <div class="item button btn-box-primary" id="btn-save-cv">
+                    <div class="title">Lưu CV</div>
+                    <i class="fa fa-floppy-o"></i>
+                </div>
+            </div>
+        </div>
+        <div class="cv-form-text-editor">
+            <div class="container">
+                <div class="edit-control-wrapper">
+                    <div class="editor-controls disabled">
+                        <div class="editor-control-group">
+                            <span class="editor-control control-bold" title="Chữ đậm" command="bold">
+                                <i class="fa fa-bold" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-italic" title="Chữ nghiêng" command="italic">
+                                <i class="fa fa-italic" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-underline" title="Chữ đậm" command="underline">
+                                <i class="fa fa-underline" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="editor-control-group">
+                            <span class="editor-control control-align-left" title="Căn trái" command="align-left">
+                                <i class="fa fa-align-left" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-align-right" title="Căn phải" command="align-right">
+                                <i class="fa fa-align-right" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-align-center" title="Căn giữa" command="align-center">
+                                <i class="fa fa-align-center" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-align-justify" title="Căn đều hai lề" command="align-justify">
+                                <i class="fa fa-align-justify" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="editor-control-group">
+                            <span class="editor-control control-undo" title="Hoàn tác" command="undo">
+                                <i class="fa fa-undo" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-redo" title="Làm lại" command="redo">
+                                <i class="fa fa-repeat" aria-hidden="true"></i>
+                            </span>
+                            <span class="editor-control control-remove-format" title="Xoá hết định dạng" command="remove-format">
+                                <i class="fa fa-eraser" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--cv container-->
+    <div id="cv-builder-container">
+        <div class="container">
+            <div id="cv-layout-container">
+                <div id="cv-layout">
+                    <!--title cv-->
+                    <div id="cv-title" class="non-printable" blockkey="common" fieldkey="cvtitle"
+                    contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                    maxlength="64" cvo-placeholder="Tiêu đề CV">
+                        CV Apply Software engineer
+                    </div>
+                    <!--document cv to user down load-->
+                    <div id="cv-document-root">
+                        <div id="cv-document" class="cv-document">
+                            <div class="cv-page">
+                                <!--start cv- subpage-->
+                                <div class="cv-subpage">
+                                    <!--start cv-body-->
+                                    <div id="cv-body">
+                                        <!--header of cv-->
+                                        <div id="group-header">
+                                            <div id="cv-profile">
+                                                <div id="cv-profile-avatar-wrapper">
+                                                    <img id="cv-profile-avatar"
+                                                         src="https://static.topcv.vn/avatars/2h93vv2TYIbOGJCoGE6V_5846d39078b40_cvtpl.jpg?1506905203"
+                                                         value="2h93vv2TYIbOGJCoGE6V_5846d39078b40_cvtpl.jpg" alt="avatar" name="cvoData[profile][avatar]"
+                                                         type="image" cvo-form-field="true" blockkey="profile" fieldkey="avatar">
+                                                </div>
+                                                <div id="cv-profile-header">
+                                                    <div id="cv-profile-fullname-wrapper">
+                                                        <span id="cvo-profile-fullname" name="cvoData[profile][fullname]" type="text" blockkey="profile" fieldkey="fullname" class="default_min_width" cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="64" cvo-placeholder="Họ tên">Trương Văn Hà</span>
+                                                    </div>
+                                                    <div id="cv-profile-title-wrapper">
+                                                        <span id="cvo-profile-title" name="cvoData[profile][title]" type="text" blockkey="profile" fieldkey="title" class="default_min_width" cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Vị trí công việc bạn muốn ứng tuyển">Supporter for&nbsp;YOUTH UNLIMITED PIONEERS</span>
+                                                    </div>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                                <div style="clear: both"></div>
+                                                <div id="cv-profile-address-wrapper">
+                                                        <span id="cvo-profile-address"
+                                                              name="cvoData[profile][address]" type="text" blockkey="profile"
+                                                              fieldkey="address" class="default_min_width" cvo-form-field="true"
+                                                              contenteditable="true" cvo-validatable="true"
+                                                              cvo-validation-errors="{}" maxlength="1024" cvo-placeholder="Địa chỉ hiện tại">Quảng Nam</span>
+                                                </div>
+                                                <div id="cv-profile-email-wrapper">
+                                                    <span id="cvo-profile-email" name="cvoData[profile][email]" type="text" blockkey="profile"
+                                                          fieldkey="email" class="default_min_width" cvo-form-field="true" contenteditable="true"
+                                                          cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Địa chỉ email">
+                                                        hachange.sgroup@gmail.com
+                                                    </span>
+                                                </div>
+                                                <div id="cv-profile-phone-wrapper">
+                                                        <span id="cvo-profile-phone" name="cvoData[profile][phone]"
+                                                              type="text" blockkey="profile" fieldkey="phone" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true"
+                                                              cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Số điện thoại">0969356097</span>
+                                                </div>
+                                                <div style="clear: both"></div>
+                                            </div>
+                                            <div id="group-header-bottom-wrapper"></div>
+                                        </div>
+                                        <!--content of cv-->
+                                        <div id="cv-main">
+                                            <div id="group-middle">
+                                                <div class="cv-block" id="cv-objective">
+                                                    <div class="cv-block-title">
+                                                        <span id="cv-objective-blocktitle" name="cvoData[objective_meta][blocktitle]"
+                                                              type="text" blockkey="objective" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">Mục tiêu tham gia dự án</span>
+                                                    </div>
+                                                    <div id="cv-description-objective" name="cvoData[objective][objective]"
+                                                         type="text" blockkey="objective" fieldkey="objective" class="default_min_width"
+                                                         cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                         maxlength="4096" cvo-placeholder="Mục tiêu nghề nghiệp: ngắn hạn, dài hạn.">
+                                                        - Trở thành một thành viên trong gia đình LOTUS VIETNAM và góp phần tạo những giá trị có ích cho cộng đồng
+                                                        <br>- Nâng cao kiến thức cũng như kĩ năng cộng đồng.<br>
+                                                    </div>
+                                                </div>
+                                                <div id="cv-education" class="cv-block">
+                                                    <div class="cv-block-title">
+                                                        <span id="cv-education-blocktitle" name="cvoData[education_meta][blocktitle]"
+                                                              type="text" blockkey="education" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">Học vấn</span>
+                                                    </div>
+                                                    <div id="education-table">
+                                                        <div class="row" >
+                                                            <div class="col-left">
+                                                                <div class="cv-education-school default_min_width" name="cvoData[education][@index][school]" type="text" blockkey="education" fieldkey="school" cvo-form-field="true" group_uniqid="_rrvabnmyeu_1506905204930" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên trường học">Đại học Duy TÂN</div>
+                                                                <div class="cv-education-time">
+                                                                    <span class="cv-education-start default_min_width" name="cvoData[education][@index][start]" type="text" blockkey="education" fieldkey="start" cvo-form-field="true" group_uniqid="_rrvabnmyeu_1506905204930" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Bắt đầu">10/2015</span>
+                                                                    -
+                                                                    <span class="cv-education-end default_min_width" name="cvoData[education][@index][end]" type="text" blockkey="education" fieldkey="end" cvo-form-field="true" group_uniqid="_rrvabnmyeu_1506905204930" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Kết thúc">05/2019</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-right">
+                                                                <div class="cv-education-title default_min_width" name="cvoData[education][@index][title]" type="text" blockkey="education" fieldkey="title" cvo-form-field="true" group_uniqid="_rrvabnmyeu_1506905204930" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Ngành học / Môn học">Chuyên ngành: Công nghệ phần mềm</div>
+                                                                <div class="cv-education-details default_min_width" name="cvoData[education][@index][details]" type="text" blockkey="education" fieldkey="detail" cvo-form-field="true" group_uniqid="_rrvabnmyeu_1506905204930" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="4096" cvo-placeholder="Mô tả chi tiết">Hiện tại đang học năm 2 với điểm trung bình là 3.6/4</div>
+                                                            </div>
+                                                            <div style="clear:both;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div id="cv-activity" class="cv-block">
+                                                    <div class="cv-block-title">
+                                                        <span id="cvo-activity-blocktitle"
+                                                              name="cvoData[activity_meta][blocktitle]" type="text" blockkey="activity"
+                                                              fieldkey="blocktitle" class="default_min_width" cvo-form-field="true"
+                                                              contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="placeholder.common.blocktile">Hoạt động</span>
+                                                    </div>
+                                                    <div id="activity-table">
+                                                        <div class="row" >
+                                                            <div class="col-left">
+                                                                <div class="cv-activity-organization default_min_width"
+                                                                     name="cvoData[activity][@index][organization]" type="text"
+                                                                     blockkey="activity" fieldkey="organization" cvo-form-field="true"
+                                                                     group_uniqid="_hmn8x1b4tc8_1506905204926" contenteditable="true" cvo-validatable="true"
+                                                                     cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên tổ chức">
+                                                                    S-GROUP
+                                                                </div>
+                                                                <div class="cv-activity-time">
+                                                                    <span class="cvo-activity-start default_min_width" name="cvoData[activity][@index][start]"
+                                                                          type="text" blockkey="activity" fieldkey="start" cvo-form-field="true"
+                                                                          group_uniqid="_hmn8x1b4tc8_1506905204926" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Bắt đầu">
+                                                                        10/2015
+                                                                    </span>
+                                                                    -
+                                                                    <span class="cv-activity-end default_min_width" name="cvoData[activity][@index][end]"
+                                                                          type="text" blockkey="activity" fieldkey="end" cvo-form-field="true"
+                                                                          group_uniqid="_hmn8x1b4tc8_1506905204926" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Kết thúc">
+                                                                        NAY
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-right">
+                                                                <div class="cv-activity-position default_min_width" name="cvoData[activity][@index][position]" type="text" blockkey="activity" fieldkey="position" cvo-form-field="true"
+                                                                     group_uniqid="_hmn8x1b4tc8_1506905204926" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Ví trị tham gia">
+                                                                    Thành viên + người đào tạo lập trình
+                                                                </div>
+                                                                <div class="cv-activity-details default_min_width" name="cvoData[activity][@index][experience]" type="text"
+                                                                     blockkey="activity" fieldkey="detail" cvo-form-field="true" group_uniqid="_hmn8x1b4tc8_1506905204926" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="4096" cvo-placeholder="Mô tả chi tiết các hoạt động đã tham gia">
+                                                                    - Tham gia sgroup vào tháng 10 năm 2015 và cũng trải qua nhiều trải nghiệm vô cùng bổ ích từ bán hàng, tổ chức sự kiện, đến việc đào tạo ...
+                                                                </div>
+                                                            </div>
+                                                            <div style="clear:both;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-block" id="cv-additional-info">
+                                                    <div class="cv-block-title">
+                                                        <span id="cv-additional-info-blocktitle" name="cvoData[additional_info_meta][blocktitle]"
+                                                              type="text" blockkey="additional_info" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">
+                                                            Thông tin thêm
+                                                        </span>
+                                                    </div>
+                                                    <div id="cv-additional-information-details" name="cvoData[additional_info][details]"
+                                                         type="text" blockkey="additional_info" fieldkey="detail" class="default_min_width"
+                                                         cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                         maxlength="4096" cvo-placeholder="Điền thêm thông tin khác (nếu có)">
+                                                        - Đã tham gia cuộc thi mobile hakathon do GDG miền trung tổ chức.<br>
+                                                        - Đã từng tham gia cuộc thi startup weekend Da Nang 2016.<br>
+                                                    </div>
+                                                </div>
+                                                <div id="cv-experience" class="cv-block" style="display: none;">
+                                                    <div class="cv-block-title">
+                                                        <span id="cv-experience-blocktitle" name="cvoData[experience_meta][blocktitle]"
+                                                              type="text" blockkey="experience" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">
+                                                            Kinh nghiệm làm việc
+                                                        </span>
+                                                    </div>
+                                                    <div id="experience-table">
+                                                        <div class="row">
+                                                            <div class="col-left">
+                                                                <div class="cv-experience-company default_min_width" name="cvoData[experience][@index][company]"
+                                                                     type="text" blockkey="experience" fieldkey="company" cvo-form-field="true"
+                                                                     group_uniqid="_cm8bu7zhuai_1506905204922" contenteditable="true" cvo-validatable="true"
+                                                                     cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên công ty">
+                                                                    dự án android
+                                                                </div>
+                                                                <div class="cv-experience-time">
+                                                                    <span class="cv-experience-start default_min_width" name="cvoData[experience][@index][start]"
+                                                                          type="text" blockkey="experience" fieldkey="start" cvo-form-field="true"
+                                                                          group_uniqid="_cm8bu7zhuai_1506905204922" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Bắt đầu">
+                                                                        8/2016
+                                                                    </span>
+                                                                    -
+                                                                    <span class="cv-experience-end default_min_width" name="cvoData[experience][@index][end]"
+                                                                          type="text" blockkey="experience" fieldkey="end" cvo-form-field="true"
+                                                                          group_uniqid="_cm8bu7zhuai_1506905204922" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Kết thúc">
+                                                                        9/2016
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-right">
+                                                                <div class="cv-experience-position default_min_width" name="cvoData[experience][@index][position]"
+                                                                     type="text" blockkey="experience" fieldkey="position" cvo-form-field="true"
+                                                                     group_uniqid="_cm8bu7zhuai_1506905204922" contenteditable="true" cvo-validatable="true"
+                                                                     cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Vị trí công việc">
+                                                                    ứng dụng tìm việc làm cho sinh viên
+                                                                </div>
+                                                                <div class="cv-experience-details default_min_width" name="cvoData[experience][@index][experience]"
+                                                                     type="text" blockkey="experience" fieldkey="detail" cvo-form-field="true"
+                                                                     group_uniqid="_cm8bu7zhuai_1506905204922" contenteditable="true" cvo-validatable="true"
+                                                                     cvo-validation-errors="{}" maxlength="4096"
+                                                                     cvo-placeholder="Mô tả chi tiết công việc, những gì đạt được trong quá trình làm việc.">
+                                                                    - Tự tay làm một ứng dụng thực tế phục vụ cho sinh viên.
+                                                                </div>
+                                                            </div>
+                                                            <div style="clear:both;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                                <div id="cv-certification" class="cv-block" style="display: none;">
+                                                    <div class="cv-block-title">
+                                                        <span id="cvo-certification-blocktitle" name="cvoData[certification_meta][blocktitle]" type="text" blockkey="certification" fieldkey="blocktitle" class="default_min_width" cvo-form-field="true" contenteditable="true" cvo-validatable="true"
+                                                              cvo-validation-errors="{}" maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">
+                                                            Chứng chỉ
+                                                        </span>
+                                                    </div>
+                                                    <div id="certification-table">
+                                                        <div class="row">
+                                                            <div class="col-left">
+                                                                <div class="cv-certification-time-wrapper">
+                                                                    <span class="cv-certification-time default_min_width" name="cvoData[certification][@index][certification_time]"
+                                                                          type="text" blockkey="certification" fieldkey="time" cvo-form-field="true"
+                                                                          group_uniqid="_i5s9hoao4g_1506905204938" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Thời gian">
+                                                                        2016
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-right">
+                                                                <div class="cv-certification-title-wrapper">
+                                                                    <span class="cv-certification-title default_min_width" name="cvoData[certification][@index][title]"
+                                                                          type="text" blockkey="certification" fieldkey="title" cvo-form-field="true"
+                                                                          group_uniqid="_i5s9hoao4g_1506905204938" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="1024" cvo-placeholder="Tên chứng chỉ">
+                                                                        Chứng chỉ
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div style="clear:both;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                                <div id="cv-award" class="cv-block" style="display: none;">
+                                                    <div class="cv-block-title">
+                                                        <span id="cv-award-blocktitle" name="cvoData[award_meta][blocktitle]"
+                                                              type="text" blockkey="award" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">
+                                                            Giải thưởng
+                                                        </span>
+                                                    </div>
+                                                    <div id="award-table">
+                                                        <div class="row">
+                                                            <div class="col-left">
+                                                                <div class="cv-award-time-wraper">
+                                                                    <span class="cv-award-time default_min_width" name="cvoData[award][@index][award_time]"
+                                                                          type="text" blockkey="award" fieldkey="time" cvo-form-field="true"
+                                                                          group_uniqid="_rs3mhw1ohjg_1506905204934" contenteditable="true" cvo-validatable="true"
+                                                                          cvo-validation-errors="{}" maxlength="256" cvo-placeholder="Thời gian">
+                                                                        2013-2014
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-right">
+                                                                <div class="cv-award-title-wraper">
+                                                                    <span class="cv-award-title default_min_width" name="cvoData[award][@index][title]"
+                                                                          type="text" blockkey="award" fieldkey="title" cvo-form-field="true"
+                                                                          group_uniqid="_rs3mhw1ohjg_1506905204934" contenteditable="true"
+                                                                          cvo-validatable="true" cvo-validation-errors="{}" maxlength="1024"
+                                                                          cvo-placeholder="Tên giải thưởng">
+                                                                        Sinh viên xuất sắc
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div style="clear:both;"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="clear: both"></div>
+                                                </div>
+                                            </div>
+                                            <div id="group-content-bottom">
+                                                <!--thing interest-->
+                                                <div id="cv-interest" class="cv-block">
+                                                    <div class="cv-block-title">
+                                                        <span id="cvo-interest-blocktitle" name="cvoData[interest_meta][blocktitle]"
+                                                              type="text" blockkey="interest" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}"
+                                                              maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">
+                                                            Sở thích
+                                                        </span>
+                                                    </div>
+                                                    <ul id="interest-table">
+                                                        <li class="row" uniqid="_od7j6cgp43a_1506905204938" type="fieldgroup" cvo-form-fieldgroup="true" conf="{&quot;selector&quot;:&quot;#interest-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-interest-details&quot;,&quot;name&quot;:&quot;cvoData[interest][@index][title]&quot;,&quot;suggestions&quot;:{&quot;interest&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;interest.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]}}}" blockkey="interest">
+                                                            <span class="cvo-interest-details default_min_width" name="cvoData[interest][@index][title]" type="text" blockkey="interest" fieldkey="title" cvo-form-field="true" group_uniqid="_od7j6cgp43a_1506905204938" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Sở thích">
+                                                            Bóng đá
+                                                            </span>
+                                                        </li>
+                                                        <li class="row" uniqid="_bztd2fhf9o_1506905204942" type="fieldgroup" cvo-form-fieldgroup="true" conf="{&quot;selector&quot;:&quot;#interest-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-interest-details&quot;,&quot;name&quot;:&quot;cvoData[interest][@index][title]&quot;,&quot;suggestions&quot;:{&quot;interest&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;interest.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]}}}" blockkey="interest">
+                                                            <span class="cvo-interest-details default_min_width" name="cvoData[interest][@index][title]" type="text" blockkey="interest" fieldkey="title" cvo-form-field="true" group_uniqid="_bztd2fhf9o_1506905204942" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Sở thích">Bóng chuyền
+                                                        </span></li>
+                                                        <li class="row" uniqid="_tnpjq21gtd_1506905204942" type="fieldgroup" cvo-form-fieldgroup="true" conf="{&quot;selector&quot;:&quot;#interest-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-interest-details&quot;,&quot;name&quot;:&quot;cvoData[interest][@index][title]&quot;,&quot;suggestions&quot;:{&quot;interest&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;interest.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]}}}" blockkey="interest">
+                                                            <span class="cvo-interest-details default_min_width" name="cvoData[interest][@index][title]" type="text" blockkey="interest" fieldkey="title" cvo-form-field="true" group_uniqid="_tnpjq21gtd_1506905204942" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Sở thích">
+                                                                Cầu lông
+                                                            </span>
+                                                        </li>
+                                                        <li class="row" uniqid="_5utqpcptcc_1506905204942" type="fieldgroup" cvo-form-fieldgroup="true" conf="{&quot;selector&quot;:&quot;#interest-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-interest-details&quot;,&quot;name&quot;:&quot;cvoData[interest][@index][title]&quot;,&quot;suggestions&quot;:{&quot;interest&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;interest.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]}}}" blockkey="interest">
+                                                            <span class="cvo-interest-details default_min_width" name="cvoData[interest][@index][title]" type="text" blockkey="interest" fieldkey="title" cvo-form-field="true" group_uniqid="_5utqpcptcc_1506905204942" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Sở thích">
+                                                                Chơi game
+                                                            </span>
+                                                        </li>
+                                                        <li class="row" uniqid="_8kl24xsavxe_1506905204942" type="fieldgroup" cvo-form-fieldgroup="true" conf="{&quot;selector&quot;:&quot;#interest-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-interest-details&quot;,&quot;name&quot;:&quot;cvoData[interest][@index][title]&quot;,&quot;suggestions&quot;:{&quot;interest&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;interest.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]}}}" blockkey="interest">
+                                                            <span class="cvo-interest-details default_min_width" name="cvoData[interest][@index][title]" type="text" blockkey="interest" fieldkey="title" cvo-form-field="true" group_uniqid="_8kl24xsavxe_1506905204942" contenteditable="true" cvo-validatable="true" cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Sở thích">
+                                                                Du lịch
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!--skill set-->
+                                                <div id="cv-skill-rate" class="cv-block">
+                                                    <div class="cv-block-title">
+                                                        <span id="cvo-skillrate-blocktitle" name="cvoData[skillrate_meta][blocktitle]"
+                                                              type="text" blockkey="skillrate" fieldkey="blocktitle" class="default_min_width"
+                                                              cvo-form-field="true" contenteditable="true" cvo-validatable="true"
+                                                              cvo-validation-errors="{}" maxlength="1024" cvo-placeholder="Tiêu đề mục lớn">
+                                                            Kỹ năng
+                                                        </span>
+                                                    </div>
+                                                    <div id="skill-rate-table">
+                                                        <div class="row" uniqid="_rtnnf9o003j_1506905204950" type="fieldgroup" cvo-form-fieldgroup="true"
+                                                             conf="{&quot;selector&quot;:&quot;#skillrate-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-title&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][title]&quot;,&quot;suggestions&quot;:{&quot;skill&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;skillrate.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]},&quot;skill_rate&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-bar&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][rate]&quot;,&quot;index&quot;:true,&quot;type&quot;:&quot;rate&quot;,&quot;display_attr&quot;:&quot;bval&quot;,&quot;rate_data&quot;:{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;},&quot;default&quot;:2,&quot;placeholder&quot;:&quot;skillrate.rate&quot;,&quot;validates&quot;:[]}}}" blockkey="skillrate">
+                                                            <div>
+                                                                <span class="cv-skill-rate-title default_min_width" name="cvoData[skillrate][@index][title]"
+                                                                      type="text" blockkey="skillrate" fieldkey="title" cvo-form-field="true"
+                                                                      group_uniqid="_rtnnf9o003j_1506905204950" contenteditable="true" cvo-validatable="true"
+                                                                      cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên kỹ năng">
+                                                                    Làm việc nhóm
+                                                                </span>
+                                                            </div>
+                                                            <div class="cv-skillrate-bar" bval="3" rate-value="3" name="cvoData[skillrate][@index][rate]"
+                                                                 type="rate" cvo-form-field="true" blockkey="skillrate" fieldkey="skill_rate"
+                                                                 group_uniqid="_rtnnf9o003j_1506905204950"
+                                                                 rate_data="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;}" display_attr="bval">
+                                                                    <span class="cv-skill-rate-value"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" uniqid="_slxwckt34ng_1506905204950" type="fieldgroup" cvo-form-fieldgroup="true"
+                                                             conf="{&quot;selector&quot;:&quot;#skillrate-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-title&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][title]&quot;,&quot;suggestions&quot;:{&quot;skill&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;skillrate.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]},&quot;skill_rate&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-bar&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][rate]&quot;,&quot;index&quot;:true,&quot;type&quot;:&quot;rate&quot;,&quot;display_attr&quot;:&quot;bval&quot;,&quot;rate_data&quot;:{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;},&quot;default&quot;:2,&quot;placeholder&quot;:&quot;skillrate.rate&quot;,&quot;validates&quot;:[]}}}" blockkey="skillrate">
+                                                            <div>
+                                                                <span class="cvo-skill-rate-title default_min_width" name="cvoData[skillrate][@index][title]"
+                                                                      type="text" blockkey="skillrate" fieldkey="title" cvo-form-field="true"
+                                                                      group_uniqid="_slxwckt34ng_1506905204950" contenteditable="true" cvo-validatable="true"
+                                                                      cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên kỹ năng">
+                                                                    Leader
+                                                                </span>
+                                                            </div>
+                                                            <div class="cvo-skill-rate-bar" bval="3" rate-value="3" name="cvoData[skillrate][@index][rate]" type="rate" cvo-form-field="true" blockkey="skillrate" fieldkey="skill_rate" group_uniqid="_slxwckt34ng_1506905204950" rate_data="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;}" display_attr="bval">
+                                                                <span class="cv-skill-rate-value"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" uniqid="_8pq8rtesac_1506905204950" type="fieldgroup" cvo-form-fieldgroup="true" conf="{&quot;selector&quot;:&quot;#skillrate-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-title&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][title]&quot;,&quot;suggestions&quot;:{&quot;skill&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;skillrate.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]},&quot;skill_rate&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-bar&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][rate]&quot;,&quot;index&quot;:true,&quot;type&quot;:&quot;rate&quot;,&quot;display_attr&quot;:&quot;bval&quot;,&quot;rate_data&quot;:{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;},&quot;default&quot;:2,&quot;placeholder&quot;:&quot;skillrate.rate&quot;,&quot;validates&quot;:[]}}}" blockkey="skillrate">
+                                                            <div>
+                                                                <span class="cv-skill-rate-title default_min_width" name="cvoData[skillrate][@index][title]"
+                                                                      type="text" blockkey="skillrate" fieldkey="title" cvo-form-field="true"
+                                                                      group_uniqid="_8pq8rtesac_1506905204950" contenteditable="true" cvo-validatable="true"
+                                                                      cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên kỹ năng">
+                                                                    Thuyết trình
+                                                                </span>
+                                                            </div>
+                                                            <div class="cv-skill-rate-bar" bval="2" rate-value="2" name="cvoData[skillrate][@index][rate]"
+                                                                 type="rate" cvo-form-field="true" blockkey="skillrate" fieldkey="skill_rate" group_uniqid="_8pq8rtesac_1506905204950" rate_data="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;}" display_attr="bval">
+                                                                <span class="cv-skill-rate-value"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row" uniqid="_3z7atunuww_1506905204950" type="fieldgroup" cvo-form-fieldgroup="true"
+                                                             conf="{&quot;selector&quot;:&quot;#skillrate-table .row&quot;,&quot;type&quot;:&quot;fieldgroup&quot;,&quot;duplicatable&quot;:true,&quot;allowEmpty&quot;:true,&quot;fields&quot;:{&quot;title&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-title&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][title]&quot;,&quot;suggestions&quot;:{&quot;skill&quot;:null},&quot;index&quot;:true,&quot;type&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;skillrate.title&quot;,&quot;validates&quot;:[{&quot;rule&quot;:&quot;inline&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;textonly&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;notEmpty&quot;,&quot;value&quot;:true},{&quot;rule&quot;:&quot;maxlength&quot;,&quot;value&quot;:512}]},&quot;skill_rate&quot;:{&quot;selector&quot;:&quot;.cvo-skillrate-bar&quot;,&quot;name&quot;:&quot;cvoData[skillrate][@index][rate]&quot;,&quot;index&quot;:true,&quot;type&quot;:&quot;rate&quot;,&quot;display_attr&quot;:&quot;bval&quot;,&quot;rate_data&quot;:{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;},&quot;default&quot;:2,&quot;placeholder&quot;:&quot;skillrate.rate&quot;,&quot;validates&quot;:[]}}}" blockkey="skillrate">
+                                                            <div>
+                                                                <span class="cvo-skill-rate-title default_min_width" name="cvoData[skillrate][@index][title]"
+                                                                       type="text" blockkey="skillrate" fieldkey="title" cvo-form-field="true"
+                                                                      group_uniqid="_3z7atunuww_1506905204950" contenteditable="true" cvo-validatable="true"
+                                                                      cvo-validation-errors="{}" maxlength="512" cvo-placeholder="Tên kỹ năng">
+                                                                    Tiếng Anh
+                                                                </span>
+                                                            </div>
+                                                            <div class="cv-skill-rate-bar" bval="4" rate-value="4" name="cvoData[skillrate][@index][rate]"
+                                                                 type="rate" cvo-form-field="true" blockkey="skillrate" fieldkey="skill_rate"
+                                                                 group_uniqid="_3z7atunuww_1506905204950"
+                                                                 rate_data="{&quot;1&quot;:&quot;1&quot;,&quot;2&quot;:&quot;2&quot;,&quot;3&quot;:&quot;3&quot;,&quot;4&quot;:&quot;4&quot;,&quot;5&quot;:&quot;5&quot;}" display_attr="bval">
+                                                                <span class="cv-skill-rate-value"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--end cv- subpage-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cv-suggestion-container" style="height: 600px;">
+                <div style="padding: 5px 0 5px 5px;border: 1px dashed #ccc;">
+                    <a href="https://www.topcv.vn/huong-dan-sua-loi-go-tieng-viet-unikey" target="_blank">
+                        <i class="fa fa-keyboard-o"></i>
+                        Hướng dẫn sửa lỗi gõ tiếng Việt
+                    </a>
+                </div>
+                <div id="cv-suggestion-inner" class="" style="margin-top: 0px;">
+                    <div id="cv-message">
+                        <div class="content">
+                        </div>
+                    </div>
+                    <div id="cv-suggestion-content">
+                        <h4><i class="fa fa-group"></i> Hoạt động xã hội</h4>
+                        <p>- Liệt kê các hoạt động cộng đồng, tình nguyện,...</p>
+                        <p>- <b>Nếu bạn chưa có hoạt động nào?</b> TopCV đề xuất bạn hãy tham gia chương trình du lịch tình nguyện của Tổ chức tình nguyện vì giáo dục V.E.O để vừa chung tay đóng góp hỗ trợ cộng đồng lại có cơ hội giao lưu với Tình nguyện viên quốc tế và được cấp chứng chỉ tình nguyện, xem thêm thông tin <a href="http://bit.ly/veo-topcv-text" target="_blank">tại đây</a>. </p>
+                        <p>Đặc biệt với những bạn đã có tài khoản của TopCV, Tổ chức tình nguyện vì giáo dục V.E.O sẽ hỗ trợ giảm 5% chi phí khi tham gia các chương trình du lịch tình nguyện.</p>
+                    </div>
+                    <div id="cv-suggestion-default" style="display: none;">
+                        <h4><i class="fa fa-info-circle"></i> Hướng dẫn</h4>
+                        <ol>
+                            <li>Điền đầy đủ các thông tin hiển thị trong CV</li>
+                            <li>Bấm nút <b>Lưu CV</b></li>
+                            <li>Xem &amp; Tải CV về máy</li>
+                        </ol>
+                        <p>Một số lưu ý chung:</p>
+                        <ul>
+                            <li>Sắp xếp thời gian theo thứ tự mới -&gt; cũ.</li>
+                            <li>Ưu tiên những gì quan trọng, có liên quan đến vị trí ứng tuyển lên đầu.</li>
+                            <li>Ngày tháng nên dùng: 01/2016, 01-2016 hoặc Jan 2016</li>
+                        </ul>
+                    </div>
+                    <div id="cv-suggestion-footer">
+                        Mọi chi tiết vui lòng liên hệ: <br>Email: hotro@ybox.vn<br>
+                    </div>
+                </div>
+                <div class="suggest-content suggest-cv_title">
+                    <h4><i class="fa fa-graduation-cap"></i> Tiêu đề CV</h4>
+                    <p>- Viết tên CV để dễ dàng quản lý các CV của bạn.</p>
+                    <p>- Tiêu đề này không hiển thị ra khi gửi CV cho nhà tuyển dung.</p>
+                </div>
+                <div class="suggest-content suggest-objective">
+                    <h4><i class="fa fa-check-circle"></i> Mục tiêu nghề nghiệp</h4>
+                    <p><b>Nên:</b></p>
+                    <p>- Vị trí mong muốn ứng tuyển,có thể đề cập đến công ty ứng tuyển.</p>
+                    <p>- Thể hiện kỹ năng, kiến thức chuyên môn bạn có thể áp dụng vào vị trí công việc.</p>
+                    <p>- Có thể phân ra thành mục tiêu ngắn hạn như thành thạo công việc trong vòng…tháng và mục tiêu dài hạn như cơ hội thăng tiến đến một vị trí nào đó.</p>
+                    <p>- Mục tiêu hướng đến lợi ích công ty như tăng doanh số, đẩy mạnh brand, mở rộng tập khách hàng…</p>
+                    <p><b>Không nên:</b></p>
+                    <p>- Viết mục tiêu chung chung như làm việc trong một môi trường năng động, có thể học hỏi được nhiều… hoặc tìm kiếm vị trí phù hợp với bản thân để phát huy hết tất cả những kinh nghiệm, kĩ năng của bản thân…</p>
+                </div>
+                <div class="suggest-content suggest-education">
+                    <h4><i class="fa fa-graduation-cap"></i> Học vấn</h4>
+                    <p><b>Nên:</b></p>
+                    <p>- Ngành học, trường học.</p>
+                    <p>- Một số môn chuyên ngành có tính ứng dụng cao ở công việc mà bạn đạt kết quả tốt thì bạn có thể đề cập đến.</p>
+                    <p>- Đề án, nghiên cứu khoa học nếu có…(có liên quan đến vị trí ứng tuyển).</p>
+                    <p>- Đưa vào thành tích giải thưởng như học bổng, chứng chỉ (có thể đề cập ở mục giải thưởng, chứng chỉ).</p>
+                    <p><b>Không nên:</b></p>
+                    <p>- Đưa quá trình học tập từ cấp 1, cấp 2.</p>
+                </div>
+                <div class="suggest-content suggest-experience">
+                    <h4><i class="fa fa-briefcase"></i> Kinh nghiệm làm việc</h4>
+                    <p><b>Nên:</b></p>
+                    <p>- Liệt kê theo thứ tự thời gian, công việc làm gần đây nhất nêu trước các công việc trước đó.</p>
+                    <p>- Công việc đã làm (làm fulf-time hoặc part-time), khóa thực tập có liên quan đến vị trí ứng tuyển.</p>
+                    <p>- Mô tả trách nhiệm công việc chính, súc tích nhưng đầy đủ. Đưa minh chứng (ví dụ sản phẩm bạn thiết kế, link bài báo bạn viết…).</p>
+                    <p>- Đưa ra những thành tựu và kỹ năng bạn đạt được (cá nhân bạn học hỏi được cũng như sự cống hiến cho công ty/tổ chức).</p>
+                    <p>- Nếu bạn chưa có kinh nghiệm, bạn chỉ tham gia công việc như tình nguyện, các việc làm thêm như phát tờ rơi, bồi bàn…thì bạn có thể đề cập đến nhưng chú ý chỉ ra những điều bạn học hỏi được cần có cho vị trí ứng tuyển ví dụ như khả năng làm việc nhóm, sự năng động, sáng tạo và linh hoạt, sự kiên trì, đóng góp cho cộng đồng…).</p>
+                    <p>- Viết dưới dạng các gạch đầu dòng, phân chia ý rõ ràng.</p>
+                    <p><b>Không nên:</b></p>
+                    <p>- Các công việc làm ngắn hạn ( nhỏ hơn 6 tháng) ngoại trừ khóa thực tập.</p>
+                    <p>- Đưa quá chi tiết những phần công việc nhỏ nhặt (ví dụ như in giấy tờ, đến công ty sớm dọn dẹp…).</p>
+                    <p>- Mô tả dài dòng, không phân chia ý rõ ràng.</p>
+                </div>
+                <div class="suggest-content suggest-research_experience">
+                    <h4><i class="fa fa-briefcase"></i> Kinh nghiệm nghiên cứu</h4>
+                    <p>- Các dự án hoặc các công trình nghiên cứu bạn đã từng tham gia.</p>
+                    <p>- Ghi rõ vai trò, công việc cũng như các thành tựu bạn đã đạt được.</p>
+                </div>
+                <div class="suggest-content suggest-activity">
+                    <h4><i class="fa fa-group"></i> Hoạt động xã hội</h4>
+                    <p>- Liệt kê các hoạt động cộng đồng, tình nguyện,...</p>
+                    <p>- <b>Nếu bạn chưa có hoạt động nào?</b> TopCV đề xuất bạn hãy tham gia chương trình du lịch tình nguyện của Tổ chức tình nguyện vì giáo dục V.E.O để vừa chung tay đóng góp hỗ trợ cộng đồng lại có cơ hội giao lưu với Tình nguyện viên quốc tế và được cấp chứng chỉ tình nguyện, xem thêm thông tin <a href="http://bit.ly/veo-topcv-text" target="_blank">tại đây</a>. </p>
+                    <p>Đặc biệt với những bạn đã có tài khoản của TopCV, Tổ chức tình nguyện vì giáo dục V.E.O sẽ hỗ trợ giảm 5% chi phí khi tham gia các chương trình du lịch tình nguyện.</p>
+                </div>
+                <div class="suggest-content suggest-award">
+                    <h4><i class="fa fa-trophy"></i> Giải thưởng</h4>
+                    <p>- Các giải thưởng đạt được trong quá trình học tập, công tác.</p>
+                    <p>- Ví dụ: Học bổng, Danh hiệu Nhân viên xuất sắc năm,...</p>
+                </div>
+                <div class="suggest-content suggest-certification">
+                    <h4><i class="fa fa-trophy"></i> Chứng chỉ</h4>
+                    <p>- Các khóa đào tạo kỹ năng mềm hay chuyên môn (đề cập thời gian, tổ chức, có thể chỉ ra một vài những vấn đề về chuyên môn khi bạn được học ở khóa học mà có liên quan đến công việc).</p>
+                    <p>- Chứng chỉ Tin học, Ngoại ngữ…(nếu có).</p>
+                </div>
+                <div class="suggest-content suggest-interest">
+                    <h4><i class="fa fa-heart"></i> Sở thích</h4>
+                    <p>Liệt kê một số sở thích cá nhân để giúp nhà tuyển dụng hiểu hơn về con người bạn.</p>
+                </div>
+                <div class="suggest-content suggest-other">
+                    <h4><i class="fa fa-pencil"></i> Thông tin khác</h4>
+                    <p>
+                        - Phần không bắt buộc nhập.<br>
+                        - Bạn có thể nhập bất kỳ thông tin gì mong muốn mà mẫu CV hiện tại chưa có.
+                    </p>
+                </div>
+                <div class="suggest-content suggest-profile">
+                    <h4><i class="fa fa-info-circle"></i> Thông tin cá nhân</h4>
+                    <p>
+                        • Viết đầy đủ họ tên của bạn.<br>
+                        • Email cần nghiêm túc nên chứa họ tên bạn.
+                    </p>
+                    <p>
+                        • Chèn ảnh đại diện: <br>
+                        <b>Nên:</b> chèn ảnh phù hợp với vị trí ứng tuyển,nhìn thấy khuôn mặt trực diện. <br>
+                        <b>Không nên:</b> ảnh chỉ nhìn thấy một phần khuôn mặt hoặc quay lưng về phía trước.<br>
+                    </p>
+                    <p>
+                        Nếu bạn ứng tuyển cho một số công ty trong nước hoặc các công ty không phải là công ty nước ngoài liên quan đến các nước như Mỹ, Anh bạn cỏ thể thêm một số thông tin cá nhân khác: Ngày sinh, giới tính, tình trạng hôn nhân.
+                    </p>
+                </div>
+                <div class="suggest-content suggest-project">
+                    <h4>Dự án</h4>
+                    <p>
+                        Liệt kê chi tiết các thông tin dự án bạn đã làm.
+                    </p>
+                </div>
+                <div class="suggest-content suggest-reference">
+                    <h4><i class="fa fa-bookmark"></i> Liên hệ (người đối chiếu)</h4>
+                    <p>
+                        - Có thể đề cập hoặc không. <br>
+                        - Phần này giúp nhà tuyển dụng đối chiếu thông tin trong CV bạn cung cấp.
+                    </p>
+                </div>
+                <div class="suggest-content suggest-skill">
+                    <h4><i class="fa fa-magic"></i> Kỹ năng</h4>
+                    <p><b>Nên:</b></p>
+                    <p>- Nêu ra các kỹ năng giúp ích cho vị trí ứng tuyển
+                        (tùy thuộc vào vị trí ứng tuyển và những kỹ năng bạn có để đưa vào CV những kỹ năng phù hợp).</p>
+                    <p>- Có thể đưa minh chứng ngắn gọn những kỹ năng đạt được qua công việc gì, hoạt động gì…</p>
+                    <p><b>Không nên:</b></p>
+                    <p>- Đưa định nghĩa, quan điểm cá nhân.</p>
+                </div>
+                <div class="suggest-content suggest-summary">
+                    <h4><i class="fa fa-reorder"></i> Tóm tắt</h4>
+                    <p>
+                        Viết tóm tắt các kỹ năng làm nổi bật kinh nghiệm bản thân, giúp nhà tuyển dụng thực sự hiểu bạn là ai.
+                    </p>
+                </div>
+                <div class="ads-viet-cv" style="display: none;">
+                    <div class="box box-nopadding">
+                        <a href="https://www.topcv.vn/khoa-hoc-viet-cv?utm_campaign=courses&amp;utm_source=viet-cv&amp;utm_medium=banner&amp;ref=topcv" target="_blank" id="link-img">
+                            <img src="https://www.topcv.vn/images/banner-khoa-hoc-cv-vietcv.gif" alt="Khoa hoc viet CV" title="Khoa hoc viet CV" width="375" id="ads-img">
+                        </a>
+                        <div class="ads-close">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-close fa-stack-1x fa-inverse"></i>
+ </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer class="box-white">
+    <div class="footer-bottom text-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    © Bản quyền thuộc về YBOX Việt Nam
+                </div>
+                <div class="col-md-5">
+                    Kênh thông tin chất lượng cao của sinh viên và giới trẻ Việt Nam
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../static/js/cv-main.js"></script>
+<script src="../static/js/cv-upload.js"></script>
+</body>
+</html>

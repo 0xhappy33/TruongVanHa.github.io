@@ -1,0 +1,39 @@
+body{
+    color: #000;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: 300;
+    background-color: #f6f6f6;
+}
+.box-white{
+    background-color: white;
+}
+.box{
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.text-tiny{
+    font-size: 10px;
+}
+
+.text-gray{
+    color: #999;
+}
+.text-dark-gray{
+    color: #666;
+}
+a{
+    background-color: transparent;
+    color: #4a4a4a;
+}
+a:hover{
+    cursor: auto;
+    text-decoration: none;
+}
+.fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}

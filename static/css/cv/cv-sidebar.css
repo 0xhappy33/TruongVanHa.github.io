@@ -1,0 +1,23 @@
+#cv-suggestion-container{
+    float: right;
+    padding: 0 0 10px 10px;
+    width: 320px;
+    color: #555;
+    line-height: 1.4em;
+    font-size: 14px;
+}
+#cv-suggestion-container a{
+    color: #0DA171;
+    font-weight: 500;
+}
+#cv-suggestion-inner{
+    width: 374px;
+    padding-right: 10px;
+}
+#cv-suggestion-inner.fixed{
+    position: fixed;
+    top: 90px;
+}
+.suggest-content{
+    display: none;
+}

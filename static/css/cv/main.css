@@ -1,0 +1,327 @@
+main{
+    position: relative;
+}
+main #cv-toolbar{
+    width: 100%;
+    margin-bottom: 3px;
+}
+.btn-box-primary{
+    background-color: #EDAA1E;
+    color: white;
+}
+.toolbar-controls{
+    height:76px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px #ccc;
+}
+/*.select2-hidden-accessible{
+    border:0!important;
+    clip:rect(0,0,0,0) !important;
+    height: 1px !important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+}
+.select2-container{
+    font-size: 12px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.select2-container--default .select2-selection--single{
+    background-color: #fff;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    -webkit-user-select:none;
+}
+:focus{
+    outline: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #444;
+    line-height: 28px;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 26px;
+    position: absolute;
+    top:1px;
+    right:1px;
+    width: 20px;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 4px 5px 4px;
+    border-style: solid;
+    height: 0;
+    width: 0;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+}*/
+option{
+    display: block;
+    font-weight: normal;
+    white-space: pre;
+    min-height: 1.2em;
+}
+
+.fa-check:before{
+    content: "";
+}
+.active .fa-check:before{
+    content: "\f00c";
+    color: white;
+}
+.toolbar-controls .item{
+    float: left;
+    padding: 10px;
+    border-right: 1px solid #eee;
+    height: 76px;
+    text-align: center;
+    color: #666;
+    min-width: 100px;
+}
+#cv-toolbar .item .options{
+    margin-top: 7px;
+}
+
+#cv-toolbar span.color{
+    height:  22px;
+    width: 22px;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 3px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#cv-toolbar span.color:hover{
+    content: "";
+}
+
+#cv-toolbar .item .options{
+    margin-top: 7px;
+}
+
+#cv-toolbar span.fontsize:nth-child(1), #cv-toolbar span.line-height:nth-child(1){
+    font-size: 10px;
+}
+
+#cv-toolbar span.fontsize:nth-child(2), #cv-toolbar span.line-height:nth-child(2){
+    font-size: 14px;
+}
+
+#cv-toolbar span.fontsize:nth-child(3), #cv-toolbar span.line-height:nth-child(3){
+    font-size: 18px;
+}
+
+#cv-toolbar span.fontsize.active, #cv-toolbar span.line-height.active{
+    background-color: #666;
+    color: #fff;
+}
+
+#cv-toolbar span.fontsize:hover, #cv-toolbar span.line-height:hover{
+    background-color: #666;
+    color: white;
+}
+
+
+.item .fontsize, .item .line-height{
+    display: inline-block;
+    margin: 0 2px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    line-height: 23px;
+    cursor: pointer;
+}
+
+#cv-toolbar.item .button{
+    padding:10px 25px;
+    cursor: pointer;
+}
+#cv-toolbar .item.button .title{
+    margin-bottom: 5px;
+}
+#cv-toolbar .toolbar-controls .item .button .fa{
+    font-size: 26px;
+}
+
+#cv-toolbar .cv-form-text-editor{
+    display: block;
+    width: 100%;
+}
+.fa-save:before, .fa-floppy-o:before{
+    content: "\f0c7";
+}
+.edit-control-wrapper{
+    text-align: center;
+    width:210mm;
+    box-shadow: 0 1px 2px 0 #ccc;
+}
+.editor-controls{
+    color: #333;
+    background-color: #ffffff;
+    width: 210mm;
+    margin: 0 auto;
+    padding: 5px 5px 5px 25px;
+}
+    .editor-control-group{
+        display: inline-block;
+        margin-right: 20px;
+        border-radius: 3px;
+    }
+        .editor-control{
+            color: #888;
+            cursor: pointer;
+            display: inline-block;
+            min-width: 30px;
+            padding:5px 15px;
+            border:1px solid #efefef;
+        }
+
+#cv-builder-container{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+    #cv-layout-container{
+        width: 210mm;
+        float: left;
+        margin-top: 10px;
+    }
+        #cv-layout{
+            width: 210mm;
+            min-height: 290mm;
+        }
+            #cv-title{
+                outline: 1px dashed #ccc;
+            }
+            #cv-title{
+                padding: 5px 0;
+                text-align: center;
+                width: 100%;
+                margin: 0 auto 8px;
+                font-size: 20px;
+            }
+            [contentEditable=true]{
+                min-height: 1em;
+                display: inline-block;
+                position: relative;
+            }
+            #cv-document-root{
+                margin: 0 auto;
+                padding:0;
+                font-size: 12pt;
+                position: relative;
+            }
+                #cv-document-root .cv-page{
+                    padding: 0;
+                    position: relative;
+                    width: 210mm;
+                    min-height: 260mm;
+                    margin: 0 auto;
+                    box-shadow: 0 0 1px rgba(0,0,0,0.25);
+                    background-color: white;
+                }
+                .cv-document .cv-subpage{
+                    padding: 0 0 1cm;
+                    min-height: 200mm;
+                }
+                    #cv-body{
+                        margin: 0 auto;
+                        width: 100%;
+                        min-height: 1022px;
+                        position: relative;
+                        background: #ffffff;
+                        font-family: 'HelveticaNeueLight',Arial,sans-serif;
+                        font-size: 14px;
+                    }
+                    #cv-body #group-header{
+                        background-color: #3ba469;
+                        width: 100%;
+                        min-height: 200px;
+                        color: white;
+                        position: relative;
+                        margin-bottom: 25px;
+                    }
+                    #cv-body #group-header #cv-profile{
+                        padding: 20px 30px 10px;
+                        display: block;
+                    }
+                    #cv-profile-avatar-wrapper{
+                        width: 20%;
+                        margin-right: 15%;
+                        padding-right: 40px;
+                        padding-left: 30px;
+                        float: left;
+                    }
+                        #cv-profile-avatar-wrapper #cv-profile-avatar{
+                            width: 118px;
+                            height: 118px;
+                            -webkit-border-radius: 50%;
+                        }
+                        #cv-profile-avatar-wrapper #cv-profile-avatar:hover{
+                            cursor: pointer;
+                        }
+                    #cv-profile-header{
+                        padding:15px;
+                        width: 65%;
+                        float: left;
+                        margin-bottom: 15px;
+                        text-align: left;
+                    }
+                        #cv-profile-header #cv-profile-fullname-wrapper {
+                            font-weight: bold;
+                            font-size: 38px;
+                            line-height: 1.2em;
+                        }
+                    #cv-profile-title-wrapper{
+                        font-size: 20px;
+                        line-height: 1em;
+                        padding-left: 5px;
+                        padding-top: 4px;
+                    }
+                    #cv-profile-address-wrapper{
+                        width: 38%;
+                        text-align: left;
+                        margin-top: 5px;
+                        padding: 10px 5px 0;
+                        float: left;
+                    }
+                    #cv-profile-email-wrapper{
+                        width: 38%;
+                        text-align: center;
+                        margin-top: 5px;
+                        padding: 10px 5px 0;
+                        float: left;
+                    }
+                    #cv-profile-phone-wrapper{
+                        width: 24%;
+                        text-align: right;
+                        margin-top: 5px;
+                        padding: 10px 5px 0;
+                        float: left;
+                    }
+
+                    #group-header-bottom-wrapper{
+                        position: absolute;
+                        bottom:-30px;
+                        width: 100%;
+                        height: 40px;
+                        background-image: url("/static/img/header_bottom_cv.png");
+                    }
+

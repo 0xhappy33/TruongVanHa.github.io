@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BoxCV - Trang CV dành cho kênh truyền thông Ybox</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/cv.css">
+    <link rel="stylesheet" href="../static/css/sidebar.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn btn-default btn-lg" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="../static/img/logo.png" alt="yBoxCV, Inc"
+                         title="Kênh thông tin chất lượng cao của sinh viên & giới trẻ Việt Nam" class="logo-cv">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right nav-header">
+                    <li>
+                        <a href="#">
+                            Trang quản lí
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cv.html" data-toggle="dropdown">
+                            Quản lí CV <span class="label label-info label-number">1</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Hồ sơ cá nhân <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mã ứng viên : <span class="id-user">#267333</span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Quản lí CV</a></li>
+                            <li><a href="#">Nâng cấp tài khoản</a></li>
+                            <li><a href="#">Thay đổi mật khẩu</a></li>
+                            <li><a href="#">Trợ giúp</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Thoát tài khoản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <section>
+                    <div class="box-header">
+                        <div class="row">
+                            <div class="box-header-title col-sm-6 col-md-9">
+                                <a href="javascript:void(true)">Danh sách CV</a>
+                            </div>
+                            <div class="box-header-toolbox col-sm-6 col-md-3 text-right">
+                                <a href="#" class="btn btn-box-primary btn-sm">
+                                    <span class="fa fa-plus-circle"></span> Tạo mới
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div id="cv-list">
+                            <div class="box box-white cv clearfix">
+                                <div class="hidden-xs col-sm-3 col-cv-thumb">
+                                    <a href="#" class="cv-thumb" target="_blank">
+                                        <img src="https://www.topcv.vn/images/cv/screenshots/thumbs/vi/mau-cv-onepage_elegant.png"
+                                             alt="image-cv" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-9 col-cv-data">
+                                    <div class="clearfix">
+                                        <h4 class="cv-title pull-left">
+                                            <a href="#" class="text-highlight" target="_blank">
+                                                CV Apply java developer
+                                            </a>
+                                        </h4>
+                                        <span class="cv-date pull-right text-gray">
+                                            <i class="fa fa-clock-o text-highlight" aria-hidden="true"></i>
+                                             06-12-2016 15:05 PM
+                                        </span>
+                                    </div>
+                                    <div class="cv-url text-gray">
+                                        <input type="text" value="https://i.topcv.vn/truongvanha?ref=358295" onclick="this.select()" readonly>
+                                    </div>
+                                    <ul class="cv-action">
+                                        <li>
+                                            <a href="" class="btn btn-sm bold" target="_blank">
+                                                <i class="fa fa-eye"></i>
+                                                Xem
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-sm bold btn-download-cv" target="_blank">
+                                                <i class="fa fa-download"></i>
+                                                Tải xuống
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-sm bold" target="_blank">
+                                                <i class="fa fa-pencil"></i>
+                                                Sửa
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn btn-sm bold" data-toggle="modal"
+                                               data-link="https://www.topcv.vn/delete-cv?cv_id=04f5483d83e615017e171d3e8f870266"
+                                               target="#confirmDelete">
+                                                <i class="fa fa-trash"></i>
+                                                Xóa
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box box-white cv clearfix">
+                                <a href="#" target="_blank">
+                                    <img src="https://www.topcv.vn/images/banner-khoahocvietcv-ngang.gif"
+                                         alt="Khóa học viết CV" style="width: 100%">
+                                </a>
+                            </div>
+                            <div class="box box-white cv clearfix">
+                                <a href="#" target="_blank">
+                                    <img src="https://www.topcv.vn/images/cap-nhat-ho-so.png"
+                                         alt="cập nhật hồ sơ cá nhân" style="width: 100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="box-header">
+                        <div class="row">
+                            <div class="box-header-title col-md-12">
+                                <a href="javascript:void(0)">Các dịch vụ của TopCV</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="box box-small box-white">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="service-icon-wrapper">
+                                                <img src="../static/img/icon-chinh-sua-cv.png" class="img-responsive" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="box-title text-dark-gray bold">
+                                                <a href="https://www.topcv.vn/dich-vu-tu-van-viet-sua-cv" target="_blank" class="text-dark-gray">Tư vấn sửa CV</a>
+                                            </div>
+                                            <div class="box-content text-gray">
+                                                Hỗ trợ chỉnh sửa CV &amp; tư vấn cách viết CV chuyên sâu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box box-small box-white">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="service-icon-wrapper">
+                                                <img src="../static/img/icon-thiet-ke-cv.png" class="img-responsive" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="box-title text-dark-gray bold">
+                                                <a href="https://www.topcv.vn/dich-vu-tu-van-viet-sua-cv" target="_blank" class="text-dark-gray">Thiết kế CV</a>
+                                            </div>
+                                            <div class="box-content text-gray">
+                                                Hỗ trợ chỉnh sửa CV &amp; tư vấn cách viết CV chuyên sâu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="box box-small box-white">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="service-icon-wrapper">
+                                                <img src="../static/img/icon-dich-cv.png" class="img-responsive" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="box-title text-dark-gray bold">
+                                                <a href="https://www.topcv.vn/dich-vu-tu-van-viet-sua-cv" target="_blank" class="text-dark-gray">Dịch vụ CV</a>
+                                            </div>
+                                            <div class="box-content text-gray">
+                                                Hỗ trợ chỉnh sửa CV &amp; tư vấn cách viết CV chuyên sâu.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-4">
+                <aside>
+                    <div class="box box-white">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="profile-avatar">
+                                    <img src="../static/img/avatar.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div>Chào bạn trở lại</div>
+                                <h4 class="profile-fullname">
+                                    Trương Văn Hà
+                                </h4>
+                                <div class="account-type free">
+                                    Tài khoản miễn phí
+                                </div>
+                                <div class="box-footer">
+                                    <a href="#" class="btn btn-box-primary">Nâng cấp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-xs-9">
+                                        <div class="text-tiny">
+                                            Hoàn thiện thông tin cá nhân
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <div class="text-tiny">
+                                            <span class="tcv-progress-meta-value">2</span>/
+                                            <span class="tcv-progress-meta-total">3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress-bar-wrapper">
+                                    <div class="cv-progress-bar">
+                                        <div class="cv-progress-value" style="width: 67%;"></div>
+                                    </div>
+                                </div>
+                                <div class="check-list-box text-gray">
+                                    <div class="check-list-item" id="item-account-info">
+                                        <a href="javascript:showConfirmEmailPassword()" class="text-gray">Hoàn thiện thông tin đăng nhập</a>
+                                    </div>
+                                    <div class="check-list-item done">
+                                        <a href="javascript:void(0)" >
+                                            Sở hữu một CV chuyên nghiệp giúp bạn dễ tiếp cận đến công việc phù hợp với bản thân mình hơn.
+                                        </a>
+                                    </div>
+                                    <div class="check-list-item done">
+                                        <a href="javascript:void(0)" >
+                                            Cập nhật hồ sơ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box box-white">
+                        <a href="#">
+                            <img src="../static/img/amaricanboard.gif" class="img-responsive">
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="box-white">
+    <div class="footer-bottom text-dark-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    © Bản quyền thuộc về YBOX Việt Nam
+                </div>
+                <div class="col-md-5">
+                    Kênh thông tin chất lượng cao của sinh viên và giới trẻ Việt Nam
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

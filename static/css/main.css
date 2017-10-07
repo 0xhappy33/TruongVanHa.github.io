@@ -1,0 +1,27 @@
+main{
+    margin-top: 10px;
+}
+.box-header{
+    padding: 15px 0;
+}
+.box-header-title{
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.box-header-toolbox{
+    font-size: 12px;
+    line-height: 24px;
+}
+    .btn-box-primary{
+        background-color: #EDAA1E;
+        color: white;
+    }
+
+    .btn-sm{
+        padding: 5px 10px;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 1.5;
+        display: inline-block;
+    }

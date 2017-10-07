@@ -1,0 +1,61 @@
+
+#cv-list .cv .cv-thumb{
+    display: block;
+    border: 1px solid #efefef;
+    text-align: center;
+    max-width: 110px;
+}
+#cv-list .cv .cv-thumb .img-responsive{
+    max-width: 100%;
+    display: inline-block;
+}
+#cv-list .cv .cv-date{
+    margin-top: 10px;
+    color: #999999;
+}
+.text-highlight{
+    color: #333132;
+    font-weight: bold;
+}
+
+#cv-list .cv .cv-url{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#cv-list .cv .cv-url input{
+    border: 1px dashed #ccc;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+}
+#cv-list .cv .cv-action{
+    list-style: none;
+    text-align: right;
+}
+#cv-list .cv .cv-action li{
+    display: inline-block;
+}
+#cv-list .cv .cv-action li a{
+    font-size: 12px;
+    background-color: #f6f6f6;
+    color: #666;
+    border-radius: 2px;
+    font-weight: normal;
+    padding: 4px 10px;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+
+.service-icon-wrapper{
+    padding-top: 10px;
+}
+.box-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.box .box-small .box-content{
+    padding: 10px 0;
+}
+
+
